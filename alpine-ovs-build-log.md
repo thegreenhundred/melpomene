@@ -4,8 +4,6 @@
       $ apk add openvswitch openvswitch-doc openvswitch-dev openvswitch-bash-completion
 
 # Start OVS VSwitchDaemon & Add to Default Run Level
-''''bash
-   $ rc-update add ovs-vswitchd default
-   $ rc-service ovs-vswitchd start
-''''
+      $ rc-update add ovs-vswitchd default
+      $ rc-service ovs-vswitchd start
 

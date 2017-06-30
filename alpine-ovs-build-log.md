@@ -7,3 +7,7 @@ Install & setup ovs on stationary/ethernet alpine based libvirt/qemu host
 ## Start OVS VSwitchDaemon & Add to Default Run Level
       $ rc-update add ovs-vswitchd default
       $ rc-service ovs-vswitchd start
+
+## Initialize the ovs database
+sudo ovs-vsctl init
+ovs-vsctl add-br $BR1NAME
